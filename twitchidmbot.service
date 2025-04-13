@@ -1,0 +1,10 @@
+[Unit]
+Description=A bot running on twitch to control your iDotMatrix screen
+
+[Service]
+WorkingDirectory=/home/komupon/idmatbot/
+ExecStart=/usr/bin/bash /home/komupon/idmatbot/run_bot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

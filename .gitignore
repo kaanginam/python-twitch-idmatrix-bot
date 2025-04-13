@@ -1,0 +1,11 @@
+node_modules/** */
+node_modules
+venv
+images
+__pycache__
+find_emote*
+tmp*
+package*
+settings.py
+tokens.*
+botlog
