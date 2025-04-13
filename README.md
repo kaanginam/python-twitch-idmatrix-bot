@@ -90,6 +90,6 @@ Example input: `!idm Pepega 0`
 
 - Command cooldown, user cooldown
 - Extra functions -> sending images using links, sending text
-- File cleanups after downloading the webp and converting
+- File cleanups after downloading the webp and converting? Increaes time it takes for displaying same emote multiple times... make it optional perhaps
 - Forgot to remove the fixed sizes for IDM screens
 - better logging

@@ -1,7 +1,7 @@
 import asyncio
 import logging
 import sqlite3
-from settings import BOT_CLIENT_ID, BOT_CLIENT_SECRET, BOT_ID, OWNER_ID, ADDR, IMGPATH
+from settings import BOT_CLIENT_ID, BOT_CLIENT_SECRET, BOT_ID, OWNER_ID, ADDR, IMGPATH, SIZE
 import asqlite
 import twitchio
 from twitchio.ext import commands
@@ -127,7 +127,7 @@ def main() -> None:
     twitchio.utils.setup_logging(level=logging.INFO)
 
     async def runner() -> None:
-        async with asqlite.create_pool("tokens.db") as tdb, Bot(imgpath=IMGPATH, address=ADDR, size="32", token_database=tdb) as bot:
+        async with asqlite.create_pool("tokens.db") as tdb, Bot(imgpath=IMGPATH, address=ADDR, size=SIZE, token_database=tdb) as bot:
             await bot.setup_database()
             await bot.start()
 
